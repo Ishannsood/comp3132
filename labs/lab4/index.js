@@ -8,6 +8,11 @@ app.use(express.json());
 // instruction.html will be reachable at http://localhost:3000/instruction.html
 app.use(express.static("public"));
 
+// GET / -> land on the instructions page instead of "Cannot GET /"
+app.get("/", (req, res) => {
+  res.redirect("/instruction.html");
+});
+
 // GET /hello -> plain text
 app.get("/hello", (req, res) => {
   res.type("text/plain").send("Hello Express JS");
