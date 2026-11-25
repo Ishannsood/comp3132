@@ -1,0 +1,11 @@
+{
+  "name": "redux-jwt-demo-server",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": { "start": "node index.js" },
+  "dependencies": {
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
